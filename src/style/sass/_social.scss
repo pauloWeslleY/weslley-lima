@@ -1,0 +1,35 @@
+@use 'colors';
+
+/* TODO: Rede Sociais *****/
+.link {
+	color: colors.$gray-200;
+	@extend %u-bold;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: colors.$blue-200;
+		transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+}
+
+.contact__links {
+	display: flex;
+	gap: 0.8rem;
+
+	.socialInst {
+		color: colors.$red-100;
+	}
+
+	.socialLinkd {
+		color: colors.$blue-300;
+	}
+
+	.socialGit {
+		color: colors.$gray-200;
+	}
+}
+
+/* End Style Rede Sociais */

@@ -1,0 +1,60 @@
+// NOTE: importa library
+@use 'library';
+@use 'navigation';
+@use 'header';
+@use 'main';
+@use 'portfolio';
+@use 'social';
+@use 'media-queries';
+@use 'about';
+@use 'colors';
+
+:root {
+	font-size: 62.5%;
+}
+
+* {
+	@extend %u-no-text-decoration;
+	@extend %u-no-padding;
+	@extend %u-no-margin;
+	box-sizing: border-box;
+
+	::-webkit-scrollbar {
+		width: 1rem;
+	}
+	::-webkit-scrollbar-track {
+		background: colors.$gray-200;
+	}
+	::-webkit-scrollbar-thumb {
+		background: colors.$blue-200;
+		border-radius: 2.4rem;
+	}
+}
+
+body {
+	background-color: colors.$gray-300;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+.image_responsive {
+	width: 100%;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.button__link {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+
+	margin-top: 1rem;
+
+	color: colors.$blue-200;
+	transition: all 0.4s ease-out;
+
+	&:hover {
+		color: colors.$blue-100;
+		transform: translateY(-3px);
+	}
+}

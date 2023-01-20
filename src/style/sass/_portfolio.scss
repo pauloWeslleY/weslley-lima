@@ -1,0 +1,56 @@
+/* TODO: Import *******/
+@use 'app';
+
+.hero__posts_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	//[] Style Portfolio
+	.hero__posts {
+		@extend %u-display-inline-block;
+		width: 32rem;
+		height: 32rem;
+		margin-right: 1.5rem;
+		margin-bottom: 1.5rem;
+		background-size: cover;
+		overflow: hidden;
+
+		.hero__posts_content {
+			@extend %u-display-flex;
+			@extend %u-flex-total-centered;
+
+			width: 100%;
+			height: 100%;
+			background-color: app.$black;
+			opacity: 0;
+			transition: all 1s ease-in;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			.hero__post_title {
+				@extend %u-text-align-center;
+
+				h1 {
+					@extend %u-uppercase;
+					font-size: 1.6rem;
+					color: app.$blue-100;
+				}
+
+				h2 {
+					@extend %u-no-text-transform;
+					color: app.$white;
+
+					margin-top: 0px;
+					font-weight: 100;
+				}
+			}
+		}
+
+		a {
+			@extend %u-no-text-decoration;
+		}
+	}
+}
+/* End Style Portfolio */

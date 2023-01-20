@@ -1,0 +1,100 @@
+@use 'app';
+
+/* TODO: Responsive Mobile */
+@media (max-width: 1000px) {
+	.navigation {
+		transition: height 2s ease;
+		overflow: hidden;
+
+		ul {
+			li {
+				display: none;
+
+				&.threeline-icon {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.menujs {
+		height: 310px;
+
+		ul {
+			height: auto;
+			text-align: center;
+			padding-right: 15%;
+			padding-left: 15%;
+
+			li {
+				display: block;
+				border-bottom: solid app.$gray-100 1px;
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+	.header__profile {
+		div {
+			display: block;
+			height: auto;
+		}
+
+		.header__profile_picture {
+			width: 100%;
+
+			img {
+				max-width: 75%;
+				margin-top: 0;
+				max-width: 80%;
+			}
+		}
+
+		.header__profile_title {
+			text-align: center;
+			width: 100%;
+
+			h1 {
+				margin-top: 3rem;
+				font-size: 5rem;
+				margin-left: 2rem;
+				margin-right: 2rem;
+			}
+
+			h2 {
+				margin-top: 2rem;
+				margin-left: 2rem;
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	.hero__content {
+		padding: 1rem 5% 4rem 5%;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+
+		p {
+			text-align: left;
+			line-height: 3rem;
+		}
+
+		.hero__pagination {
+			li {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.hero__posts_wrapper {
+		.hero__posts {
+			max-width: 100%;
+			background-size: auto 100%;
+
+			.hero__posts_content {
+				opacity: 0.8;
+			}
+		}
+	}
+}
