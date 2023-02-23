@@ -1,44 +1,44 @@
-@use 'app';
+@use 'variables';
 
-/* TODO: Navigation  Style **************/
+//* TODO: Navigation  Style **************/
 .navigation {
-	background-color: app.$gray-300;
-	color: app.$white;
+	background-color: variables.$gray-300;
+	color: variables.$white;
 	height: 5rem;
 
 	animation: nav_effect 4s;
 
 	ul {
-		@extend %u-text-align-right;
+		text-align: right;
 		list-style: none;
 		margin-top: 0;
 		padding-left: 0;
 		height: 5rem;
 
 		li {
-			@extend %u-display-inline-block;
+			display: inline-block;
 			padding-inline: 3rem;
 			line-height: 5rem;
 			font-size: 1.8rem;
 			font-weight: 300;
 
 			a {
-				@extend %u-no-text-decoration;
-				color: app.$white;
+				text-decoration: none;
+				color: variables.$white;
 
 				transition: all 0.2s ease-in;
 
 				&:hover {
 					font-weight: 400;
-					color: app.$blue-100;
+					color: variables.$blue-100;
 				}
 			}
 
 			&.threeline-icon {
-				@extend %u-display-none;
+				display: none;
 
 				&:hover {
-					color: app.$blue-100;
+					color: variables.$blue-100;
 					cursor: pointer;
 				}
 			}

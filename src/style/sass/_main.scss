@@ -1,20 +1,18 @@
-@use 'app';
+@use 'variables';
 
 /* NOTE: Main Style *******************/
 .hero__content {
 	padding: 4rem 18rem 8rem 10rem;
-	color: app.$white;
+	color: variables.$white;
 
 	animation: content__effect 2s;
 
 	h1 {
-		@extend %u-no-bold;
 		margin-block: 2rem;
 	}
 
 	h2 {
-		@extend %u-uppercase;
-		@extend %u-no-bold;
+		text-transform: uppercase;
 
 		font-size: 1.7rem;
 		margin-top: 4rem;
@@ -22,14 +20,14 @@
 	}
 
 	h3 {
-		@extend %u-uppercase;
-		color: app.$blue-100;
+		text-transform: uppercase;
+		color: variables.$blue-100;
 		font-size: 1.2rem;
 		margin-bottom: 1.2rem;
 	}
 
 	p {
-		@extend %u-text-align-justify;
+		text-align: justify;
 
 		font-size: 1.8rem;
 		font-weight: 100;
@@ -44,13 +42,13 @@
 	.hero__pagination {
 		list-style: none;
 		padding-left: 0;
-		color: app.$gray-100;
+		color: variables.$gray-100;
 
 		li {
-			@extend %u-display-inline-block;
+			display: inline-block;
 
 			a {
-				color: app.$gray-100;
+				color: variables.$gray-100;
 			}
 		}
 	}

@@ -1,38 +1,30 @@
-// NOTE: importa library
-@use 'library';
-@use 'navigation';
-@use 'header';
-@use 'main';
-@use 'portfolio';
-@use 'social';
-@use 'media-queries';
-@use 'about';
-@use 'colors';
+//! NOTE: importa library
+@use 'global';
 
 :root {
 	font-size: 62.5%;
 }
 
 * {
-	@extend %u-no-text-decoration;
-	@extend %u-no-padding;
-	@extend %u-no-margin;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 
 	::-webkit-scrollbar {
 		width: 1rem;
 	}
 	::-webkit-scrollbar-track {
-		background: colors.$gray-200;
+		background: global.$gray-200;
 	}
 	::-webkit-scrollbar-thumb {
-		background: colors.$blue-200;
+		background: global.$blue-200;
 		border-radius: 2.4rem;
 	}
 }
 
 body {
-	background-color: colors.$gray-300;
+	background-color: global.$gray-300;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 }
@@ -50,11 +42,11 @@ body {
 
 	margin-top: 1rem;
 
-	color: colors.$blue-200;
+	color: global.$blue-200;
 	transition: all 0.4s ease-out;
 
 	&:hover {
-		color: colors.$blue-100;
+		color: global.$blue-100;
 		transform: translateY(-3px);
 	}
 }

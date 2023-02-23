@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"start": "lite-server",
 		"sass": "sass --watch --style compressed src/style/sass:src/style/css"
 	},
 	"author": "",

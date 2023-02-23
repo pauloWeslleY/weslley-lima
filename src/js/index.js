@@ -1,4 +1,4 @@
-/* HACK: Script Menujs */
+//! HACK: Script Menujs
 
 let openNav = document.getElementById("threeline-icon");
 

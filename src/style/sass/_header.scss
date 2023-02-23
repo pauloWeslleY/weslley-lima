@@ -1,23 +1,24 @@
-@use 'app';
+@use 'variables';
+@use 'mixins';
 
 /* TODO: Cap Style  **********/
 .header__profile {
-	@extend %u-display-flex;
-	@extend %u-flex-total-centered;
+	@include mixins.flex-center;
 	flex-wrap: wrap;
 	height: 94vh;
 
-	color: app.$white;
+	color: variables.$white;
 	padding-bottom: 2rem;
 
 	div {
-		@extend %u-display-flex;
+		display: flex;
 		gap: 0.2rem;
 	}
 
 	.header__profile_picture {
-		@extend %u-flex-total-centered;
-		@extend %u-text-align-center;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 
 		flex: 1 1 40%;
 		animation: profile__picture_effect 2s;
@@ -36,16 +37,16 @@
 		animation: profile__title_effect 2s;
 
 		h1 {
-			@extend %u-uppercase;
+			text-transform: uppercase;
 			font-weight: 200;
 			font-size: 5.8rem;
 
 			line-height: 5.4rem;
 
 			span {
-				@extend %u-display-block;
+				display: block;
 				font-weight: 400;
-				color: app.$blue-200;
+				color: variables.$blue-200;
 			}
 		}
 
