@@ -1,33 +1,20 @@
 @use 'variables';
 
 //* TODO: Rede Sociais *****/
-.link {
-	color: variables.$gray-200;
-	font-weight: bold;
 
-	&:active,
-	&:focus,
-	&:hover {
-		color: variables.$blue-200;
-		transition: all 0.5s ease-in-out;
-		-moz-transition: all 0.5s ease-in-out;
-		-webkit-transition: all 0.5s ease-in-out;
-	}
-}
-
-.contact__links {
+.social {
 	display: flex;
 	gap: 0.8rem;
 
-	.socialInst {
+	&__instagram {
 		color: variables.$red-100;
 	}
 
-	.socialLinkd {
+	&__linkedin {
 		color: variables.$blue-300;
 	}
 
-	.socialGit {
+	&__github {
 		color: variables.$gray-200;
 	}
 }

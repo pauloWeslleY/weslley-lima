@@ -3,11 +3,11 @@
 @use 'mixins';
 
 //? Style Portfolio
-.hero__posts_wrapper {
+.hero {
 	display: flex;
 	flex-wrap: wrap;
 
-	.hero__posts {
+	&__posts {
 		display: inline-block;
 		width: 32rem;
 		height: 32rem;
@@ -16,7 +16,7 @@
 		background-size: cover;
 		overflow: hidden;
 
-		.hero__posts_content {
+		&_content {
 			@include mixins.flex-center;
 
 			width: 100%;
@@ -29,7 +29,7 @@
 				opacity: 0.8;
 			}
 
-			.hero__post_title {
+			.hero__posts_title {
 				text-align: center;
 
 				h1 {
